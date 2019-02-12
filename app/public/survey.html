@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/friends.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <title>Take the Survey!</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Survey Questions!</h1>
+        <hr>
+        <form>
+            <h2>About You</h2>
+            <div class="form-group">
+                <label>Name (required)</label>
+                <input class="form-control" id="userName">
+                <label>Link to Photo Image (required)</label>
+                <input class="form-control" id="userPic">
+            </div>
+            <hr>
+            <div class="form-group">
+                <label>Question 1</label>
+                <p>When taking a job, the pay is more important than the nature of the work itself.</p>
+                <select class="form-control" id="question1">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 2</label>
+                <p>Your loyalty is always to the highest bidder.</p>
+                <select class="form-control" id="question2">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 3</label>
+                <p>You prefer catching targets alive rather than dead.</p>
+                <select class="form-control" id="question3">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 4</label>
+                <p>You prefer to approach a target using stealth, rather than guns blazing.</p>
+                <select class="form-control" id="question4">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 5</label>
+                <p>You prefer escort missions over tracking bounty heads.</p>
+                <select class="form-control" id="question5">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 6</label>
+                <p>You prefer to rely on your instincts and skill rather than weapons and equipment.</p>
+                <select class="form-control" id="question6">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 7</label>
+                <p>You take any job as long as it doesn't conflict with your personal code of honor.</p>
+                <select class="form-control" id="question7">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 8</label>
+                <p>You believe in striking first rather than waiting for the target to move.</p>
+                <select class="form-control" id="question8">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 9</label>
+                <p>You prefer to improvise rather than planning ahead.</p>
+                <select class="form-control" id="question9">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Question 10</label>
+                <p>You don't take jobs that present a risk of dying.</p>
+                <select class="form-control" id="question10">
+                    <option value=""></option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
+            <hr>
+            <p><a href="/">Return home</a></p>
+            <p><a href="/api/friends">Friends API</a></p>
+        </form>
+    </div>
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+$(document).ready(function(){
+    var yourPartner;
+    function getSum(total, num) {
+        return total + num;
+    }
+    var userInfo;
+    $('#submit').on("click", function(event){
+        event.preventDefault();
+        var isValid = true;
+        $('.form-control').each(function() {
+            if ($(this).val() === "") {
+                isValid = false;
+            }
+        });
+        if (isValid) {
+            var userInfo = {
+            name: $('#userName').val(),
+            photo: $('#userPic').val(),
+            scores: [
+                $('#question1').val(),
+                $('#question2').val(),
+                $('#question3').val(),
+                $('#question4').val(),
+                $('#question5').val(),
+                $('#question6').val(),
+                $('#question7').val(),
+                $('#question8').val(),
+                $('#question9').val(),
+                $('#question10').val(),
+            ]
+        };
+        $.post("/api/friends", userInfo, function(data){
+            if (data) {
+                $('#userName').val('');
+                $('#userPic').val('');
+                $('#question1').val('');
+                $('#question2').val('');
+                $('#question3').val('');
+                $('#question4').val('');
+                $('#question5').val('');
+                $('#question6').val('');
+                $('#question7').val('');
+                $('#question8').val('');
+                $('#question9').val('');
+                $('#question10').val('');
+            } else {
+                alert("Sorry, there was an error");
+            }
+        });
+        findPartner(userInfo);
+        } else {
+            alert("You must complete the entire form!");
+        }
+        
+    });
+    function findPartner(userData) {
+        $.ajax({ url: "/api/friends", method: "GET" })
+            .then(function(partnerData){
+                var userArray = [];
+                var itCount = partnerData.length - 1;
+                for (var i = 0; i < itCount; i ++) {
+                    var partnerArray = [];
+                    for (var y = 0; y < partnerData[i].scores.length; y++) {
+                        var sum = userData.scores[y] - partnerData[i].scores[y];
+                        if(sum < 0) {
+                            var negConvert = -1;
+                            sum = sum * negConvert;
+                        }
+                        partnerArray.push(sum);
+                    }
+                    // total difference is calculated
+                    partnerArray = partnerArray.reduce(getSum);
+                    yourPartner = partnerData[i];
+                    yourPartner.difference = partnerArray;
+                }
+                var finalPartner = partnerData[0];
+                for (var x = 0; x < itCount; x++) {
+                    if (partnerData[x].difference < finalPartner.difference) {
+                        finalPartner = partnerData[x];
+                    } else {
+
+                    }
+                }
+                $('#match-name').text(finalPartner.name);
+                $('#match-img').attr('src',finalPartner.photo);
+                $('#match-img').attr('alt',finalPartner.name);
+                $("#results-modal").modal("toggle");
+            });
+    }
+});
+</script>
+<style>
+#match-img {
+    width: 100%;
+}
+</style>
+</html>
