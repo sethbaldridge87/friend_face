@@ -2,7 +2,7 @@
 
 Node based app that takes survey information and finds the closest match within a set of objects.
 
-Technologies used: jQuery, Bootstrap, AJAX, node.js
+Technologies used: jQuery, Bootstrap, AJAX, Node.js
 
 Check it out here: https://dashboard.heroku.com/apps/the-partner-finder
 
